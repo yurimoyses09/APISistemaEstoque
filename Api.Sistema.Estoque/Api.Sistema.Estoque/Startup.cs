@@ -28,18 +28,7 @@ namespace Api.Sistema.Estoque
                     {
                         Title = "API Sistema de Estoque",
                         Version = "v1",
-                        Description = "Projeto para desenvolver api de controle de estoque",
-                        License = new OpenApiLicense 
-                        {
-                            Name = null,
-                            Url = null,
-                            Extensions = null
-                        },
-                        Contact = new OpenApiContact 
-                        {
-                            Email = "yuri09.moysesy@gmail.com",
-                            Name = "Yuri Moyses da Silva"
-                        }
+                        Description = "Projeto para desenvolver api de controle de estoque"
                     });
                 }
             );
