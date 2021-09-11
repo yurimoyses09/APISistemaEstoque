@@ -1,8 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
+﻿using AutenticacaoJWT.AutenticacaoJWT.Entities;
+using AutenticacaoJWT.AutenticacaoJWT.Services;
+using Microsoft.AspNetCore.Mvc;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace Api.Sistema.Estoque.Controllers
@@ -12,13 +11,16 @@ namespace Api.Sistema.Estoque.Controllers
     public class SistemaEstoqueController : Controller
     {
         [Route("[controller]/[action]/")]
-        [HttpGet]
-        public async Task<int> Index()
+        [HttpPost]
+        public async Task<string> GetToken(UsuarioAutenticacao usuario)
         {
-            var client = new HttpClient();
-            byte[] content = await client.GetByteArrayAsync("https://docs.microsoft.com/en-us/");
+            AuthJwtService authJwt = new AuthJwtService();
 
-            return content.Length;
+            if (usuario.CheckUsuario(usuario)) 
+            {
+                return authJwt.GerarTokenAutenticacao(usuario);
+            }
+            throw new System.Web.Http.HttpResponseException(HttpStatusCode.Unauthorized);
         }
     }
 }
