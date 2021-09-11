@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "fANZFMZDBa4BCS0GuqnFQ9K8/+LlkDtu89ziZM6GslxA19Llzzi6ggLRWgiNqIOep45pv1RYGBKVslCb8ZWpZg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ADM\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\ADM\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.12.2\\microsoft.identitymodel.jsonwebtokens.6.12.2.nupkg.sha512",
+    "C:\\Users\\ADM\\.nuget\\packages\\microsoft.identitymodel.logging\\6.12.2\\microsoft.identitymodel.logging.6.12.2.nupkg.sha512",
+    "C:\\Users\\ADM\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.12.2\\microsoft.identitymodel.tokens.6.12.2.nupkg.sha512",
+    "C:\\Users\\ADM\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.12.2\\system.identitymodel.tokens.jwt.6.12.2.nupkg.sha512",
+    "C:\\Users\\ADM\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
