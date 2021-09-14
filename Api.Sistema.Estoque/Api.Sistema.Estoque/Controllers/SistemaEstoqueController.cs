@@ -1,26 +1,11 @@
-﻿using AutenticacaoJWT.AutenticacaoJWT.Entities;
-using AutenticacaoJWT.AutenticacaoJWT.Services;
-using Microsoft.AspNetCore.Mvc;
-using System.Net;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Sistema.Estoque.Controllers
 {
     [ApiController]
-    [Route("api/v1/[controller]")]
+    [Route("api/v1/[controller]/[action]")]
     public class SistemaEstoqueController : Controller
     {
-        [Route("[controller]/[action]/")]
-        [HttpPost]
-        public async Task<string> GetToken(UsuarioAutenticacao usuario)
-        {
-            AuthJwtService authJwt = new AuthJwtService();
 
-            if (usuario.CheckUsuario(usuario)) 
-            {
-                return authJwt.GerarTokenAutenticacao(usuario);
-            }
-            throw new System.Web.Http.HttpResponseException(HttpStatusCode.Unauthorized);
-        }
     }
 }
