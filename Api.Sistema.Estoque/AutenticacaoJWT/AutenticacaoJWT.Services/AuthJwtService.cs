@@ -1,36 +1,44 @@
 ﻿using AutenticacaoJWT.AutenticacaoJWT.Entities;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace AutenticacaoJWT.AutenticacaoJWT.Services
 {
     public class AuthJwtService
     {
-        private const string Secret = "db3OIsj+BXE9NZDy0t8W3TcNekrF+2d/1sFnWG4HnV8TZY30iTOdtVWJG8abWvB1GlOgJuQZdcF2Luqm/hccMw==";
+        private readonly IConfiguration _configuration;
 
-        public string GerarTokenAutenticacao(UsuarioAutenticacao usuario) 
+        public AuthJwtService(IConfiguration configuration)
         {
-            var chaveSimetrica = Convert.FromBase64String(Secret);
+            _configuration = configuration;
+        }
+
+        public async Task<string> GerarTokenAutenticacao()
+        {
+            var issuer = _configuration["Jwt:Issuer"];
+            var audience = _configuration["Jwt:Audience"];
+            var expiry = DateTime.Now.AddMinutes(60);
+
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+            var token = new JwtSecurityToken
+            (
+                issuer: issuer,
+                audience: audience,
+                expires: expiry,
+                signingCredentials: credentials
+            );
+
             var tokenHandler = new JwtSecurityTokenHandler();
+            var stringToken = tokenHandler.WriteToken(token);
 
-            var horaAtual = DateTime.UtcNow;
-            var DescriptografarToken = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new[]
-                {
-                    new Claim(ClaimTypes.Name, usuario.Nome)
-                }),
+            return stringToken;
 
-                Expires = horaAtual.AddMinutes(5),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(chaveSimetrica), SecurityAlgorithms.HmacSha256Signature)
-            };
-
-            var stoken = tokenHandler.CreateToken(DescriptografarToken);
-            var token = tokenHandler.WriteToken(stoken);
-
-            return token;
         }
 
     }

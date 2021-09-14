@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque.csproj": {}
+    "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque.csproj": {
+    "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque.csproj",
+        "projectUniqueName": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque.csproj",
         "projectName": "Api.Sistema.Estoque",
-        "projectPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque.csproj",
+        "projectPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque.csproj",
         "packagesPath": "C:\\Users\\ADM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\obj\\",
+        "outputPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj": {
-                "projectPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj"
+              "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj": {
+                "projectPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj"
               }
             }
           }
@@ -44,6 +44,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.18, )"
+            },
             "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -83,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj": {
+    "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj",
+        "projectUniqueName": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj",
         "projectName": "AutenticacaoJWT",
-        "projectPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj",
+        "projectPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj",
         "packagesPath": "C:\\Users\\ADM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\obj\\",
+        "outputPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -119,6 +123,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.12.2, )"

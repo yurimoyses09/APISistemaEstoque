@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AutenticacaoJWT.AutenticacaoJWT.Entities
+﻿namespace AutenticacaoJWT.AutenticacaoJWT.Entities
 {
     public class UsuarioAutenticacao
     {
         public string Nome { get; set; }
-        public string Email { get; set; }
+        public string Senha { get; set; }
 
 
         public bool CheckUsuario(UsuarioAutenticacao usuario)
         {
-            if (usuario.Nome.Equals("Yuri") && usuario.Email.Equals("yuri@gmail.com")) 
+            if (usuario.Nome.Equals("Yuri") && usuario.Senha.Equals("1234")) 
             {
                 return true;
             }
