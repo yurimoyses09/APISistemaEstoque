@@ -71,6 +71,21 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.18": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Authorization/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -335,7 +350,7 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.ApiExplorer.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
+      "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
@@ -938,6 +953,33 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols/5.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.5.0",
+          "Microsoft.IdentityModel.Tokens": "5.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "5.5.0",
+          "Newtonsoft.Json": "10.0.1",
+          "System.IdentityModel.Tokens.Jwt": "5.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
         }
       },
       "Microsoft.IdentityModel.Tokens/6.12.2": {
@@ -2635,6 +2677,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "System.IdentityModel.Tokens.Jwt": "6.12.2"
         },
         "compile": {
@@ -2711,6 +2754,21 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.xml",
         "microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.authentication.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.18": {
+      "sha512": "aymAjo2uHu67eKYlD1b7VLgx9ixbUnl7X9ykr3M3Di8upjMSAF8VbIeY+/mIf5BRjK4hhLfCiR5asR7+jV4a5Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.18",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.3.1.18.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authorization/2.2.0": {
@@ -2972,16 +3030,16 @@
         "microsoft.aspnetcore.mvc.apiexplorer.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
-      "sha512": "ALiY4a6BYsghw8PT5+VU593Kqp911U3w9f/dH9/ZoI3ezDsDAGiObqPu/HP1oXK80Ceu0XdQ3F0bx5AXBeuN/Q==",
+    "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
+      "sha512": "/8sr8ixIUD57UFwUntha9bOwex7/AkZfdk1f9oNJG1Ek7p/uuKVa7fuHmYZpQOf35Oxrt+2Ku4WPwMSbNxOuWg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.mvc.core/2.2.0",
+      "path": "microsoft.aspnetcore.mvc.core/2.2.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.xml",
-        "microsoft.aspnetcore.mvc.core.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512",
         "microsoft.aspnetcore.mvc.core.nuspec"
       ]
     },
@@ -3662,6 +3720,48 @@
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
         "microsoft.identitymodel.logging.6.12.2.nupkg.sha512",
         "microsoft.identitymodel.logging.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols/5.5.0": {
+      "sha512": "m1gwAQwZjUxzRBC+4H40vYSo9Cms9yUbMdW492rQoXHU77G/ItiKxpk2+W9bWYcdsKUDKudye7im3T3MlVxEkg==",
+      "type": "package",
+      "path": "microsoft.identitymodel.protocols/5.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net45/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net451/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net451/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net461/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net461/Microsoft.IdentityModel.Protocols.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.xml",
+        "microsoft.identitymodel.protocols.5.5.0.nupkg.sha512",
+        "microsoft.identitymodel.protocols.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.5.0": {
+      "sha512": "21F4QlbaD5CXNs2urNRCO6vljbbrhv3gmGT8P18SKGKZ9IYBCn29extoJriHiPfhABd5b8S7RcdKU50XhERkYg==",
+      "type": "package",
+      "path": "microsoft.identitymodel.protocols.openidconnect/5.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net45/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net451/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net451/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "microsoft.identitymodel.protocols.openidconnect.5.5.0.nupkg.sha512",
+        "microsoft.identitymodel.protocols.openidconnect.nuspec"
       ]
     },
     "Microsoft.IdentityModel.Tokens/6.12.2": {
@@ -8047,6 +8147,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutenticacaoJWT >= 1.0.0",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.18",
       "Microsoft.AspNetCore.Mvc >= 2.2.0",
       "Swashbuckle.AspNetCore >= 6.2.1",
       "Swashbuckle.AspNetCore.SwaggerUI >= 6.2.1",
@@ -8059,11 +8160,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque.csproj",
+      "projectUniqueName": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque.csproj",
       "projectName": "Api.Sistema.Estoque",
-      "projectPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque.csproj",
+      "projectPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque.csproj",
       "packagesPath": "C:\\Users\\ADM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\obj\\",
+      "outputPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\Api.Sistema.Estoque\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8080,8 +8181,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj": {
-              "projectPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\ConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj"
+            "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj": {
+              "projectPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj"
             }
           }
         }
@@ -8096,6 +8197,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[3.1.18, )"
+          },
           "Microsoft.AspNetCore.Mvc": {
             "target": "Package",
             "version": "[2.2.0, )"

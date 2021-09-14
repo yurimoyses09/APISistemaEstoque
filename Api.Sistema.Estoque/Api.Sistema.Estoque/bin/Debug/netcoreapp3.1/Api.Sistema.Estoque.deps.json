@@ -32,6 +32,7 @@
       "Api.Sistema.Estoque/1.0.0": {
         "dependencies": {
           "AutenticacaoJWT": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.18",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Swashbuckle.AspNetCore": "6.2.1",
           "Swashbuckle.AspNetCore.SwaggerUI": "6.2.1",
@@ -378,6 +379,20 @@
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0"
         }
       },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.18": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "3.1.18.0",
+            "fileVersion": "3.100.1821.36504"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
@@ -510,10 +525,10 @@
       "Microsoft.AspNetCore.Mvc.Analyzers/2.2.0": {},
       "Microsoft.AspNetCore.Mvc.ApiExplorer/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0"
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
         }
       },
-      "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
+      "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
           "Microsoft.AspNetCore.Authorization.Policy": "2.2.0",
@@ -535,12 +550,12 @@
       "Microsoft.AspNetCore.Mvc.Cors/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Cors": "2.2.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0"
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
         }
       },
       "Microsoft.AspNetCore.Mvc.DataAnnotations/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.Extensions.Localization": "2.2.0",
           "System.ComponentModel.Annotations": "4.5.0"
         }
@@ -548,7 +563,7 @@
       "Microsoft.AspNetCore.Mvc.Formatters.Json/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "2.2.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0"
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
         }
       },
       "Microsoft.AspNetCore.Mvc.Localization/2.2.0": {
@@ -605,7 +620,7 @@
           "Microsoft.AspNetCore.Antiforgery": "2.2.0",
           "Microsoft.AspNetCore.Diagnostics.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Html.Abstractions": "2.2.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.Mvc.DataAnnotations": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Formatters.Json": "2.2.0",
           "Microsoft.Extensions.WebEncoders": "2.2.0",
@@ -880,6 +895,37 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols/5.5.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "6.12.2",
+          "Microsoft.IdentityModel.Tokens": "6.12.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {
+            "assemblyVersion": "5.5.0.0",
+            "fileVersion": "5.5.0.60624"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.5.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "5.5.0",
+          "Newtonsoft.Json": "11.0.2",
+          "System.IdentityModel.Tokens.Jwt": "6.12.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+            "assemblyVersion": "5.5.0.0",
+            "fileVersion": "5.5.0.60624"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
         }
       },
       "Microsoft.IdentityModel.Tokens/6.12.2": {
@@ -1839,6 +1885,7 @@
       },
       "AutenticacaoJWT/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "System.IdentityModel.Tokens.Jwt": "6.12.2"
         },
         "runtime": {
@@ -3583,6 +3630,13 @@
       "path": "microsoft.aspnetcore.authentication.core/2.2.0",
       "hashPath": "microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aymAjo2uHu67eKYlD1b7VLgx9ixbUnl7X9ykr3M3Di8upjMSAF8VbIeY+/mIf5BRjK4hhLfCiR5asR7+jV4a5Q==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.18",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.3.1.18.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authorization/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -3723,12 +3777,12 @@
       "path": "microsoft.aspnetcore.mvc.apiexplorer/2.2.0",
       "hashPath": "microsoft.aspnetcore.mvc.apiexplorer.2.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
+    "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ALiY4a6BYsghw8PT5+VU593Kqp911U3w9f/dH9/ZoI3ezDsDAGiObqPu/HP1oXK80Ceu0XdQ3F0bx5AXBeuN/Q==",
-      "path": "microsoft.aspnetcore.mvc.core/2.2.0",
-      "hashPath": "microsoft.aspnetcore.mvc.core.2.2.0.nupkg.sha512"
+      "sha512": "sha512-/8sr8ixIUD57UFwUntha9bOwex7/AkZfdk1f9oNJG1Ek7p/uuKVa7fuHmYZpQOf35Oxrt+2Ku4WPwMSbNxOuWg==",
+      "path": "microsoft.aspnetcore.mvc.core/2.2.5",
+      "hashPath": "microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.Cors/2.2.0": {
       "type": "package",
@@ -4030,6 +4084,20 @@
       "sha512": "sha512-MGjGS5PIxGOdDSo3DzjqZ4qfy2i75R/CGE3aehCkflb4Brh617jg5F6GoFze321PMK1bjqiqQUFtGVuMKojDWg==",
       "path": "microsoft.identitymodel.logging/6.12.2",
       "hashPath": "microsoft.identitymodel.logging.6.12.2.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Protocols/5.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m1gwAQwZjUxzRBC+4H40vYSo9Cms9yUbMdW492rQoXHU77G/ItiKxpk2+W9bWYcdsKUDKudye7im3T3MlVxEkg==",
+      "path": "microsoft.identitymodel.protocols/5.5.0",
+      "hashPath": "microsoft.identitymodel.protocols.5.5.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-21F4QlbaD5CXNs2urNRCO6vljbbrhv3gmGT8P18SKGKZ9IYBCn29extoJriHiPfhABd5b8S7RcdKU50XhERkYg==",
+      "path": "microsoft.identitymodel.protocols.openidconnect/5.5.0",
+      "hashPath": "microsoft.identitymodel.protocols.openidconnect.5.5.0.nupkg.sha512"
     },
     "Microsoft.IdentityModel.Tokens/6.12.2": {
       "type": "package",
