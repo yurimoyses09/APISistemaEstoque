@@ -4071,11 +4071,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj",
+      "projectUniqueName": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\AddGitIgnore\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj",
       "projectName": "AutenticacaoJWT",
-      "projectPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj",
+      "projectPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\AddGitIgnore\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\AutenticacaoJWT.csproj",
       "packagesPath": "C:\\Users\\ADM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\MelhorandoConfigJWT\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\obj\\",
+      "outputPath": "C:\\Users\\ADM\\Desktop\\DEV\\Branchs_SisGerencEstoque\\AddGitIgnore\\APISistemaEstoque\\Api.Sistema.Estoque\\AutenticacaoJWT\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4128,7 +4128,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.207\\RuntimeIdentifierGraph.json"
       }
     }
   }
