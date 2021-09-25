@@ -7,3 +7,5 @@
 *.cache
 *.dtbcache.v2
 *.user
+Debug/
+bin/
