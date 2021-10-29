@@ -19,10 +19,10 @@ namespace Api.Sistema.Estoque.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Login ([FromBody] UsuarioAutenticacao usuario)
+        public async Task<ActionResult> Login([FromBody] UsuarioAutenticacao usuario)
         {
             bool result = usuario.CheckUsuario(usuario);
-            if(result)
+            if (result)
             {
                 AuthJwtService authJwt = new AuthJwtService(_configuration);
                 return Ok(new

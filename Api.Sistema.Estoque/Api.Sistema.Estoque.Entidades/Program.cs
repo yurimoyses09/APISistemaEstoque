@@ -6,7 +6,6 @@ namespace Api.Sistema.Estoque.Entidades
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
         }
     }
 }
