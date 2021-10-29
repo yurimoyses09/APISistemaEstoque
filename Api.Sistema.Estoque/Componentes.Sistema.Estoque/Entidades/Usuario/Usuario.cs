@@ -1,7 +1,4 @@
 ﻿using Api.Sistema.Estoque.Entidades.Entidades.Usuario.Entidades;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Api.Sistema.Estoque.Entidades
 {
@@ -13,24 +10,21 @@ namespace Api.Sistema.Estoque.Entidades
         public string UsuarioLogin { get; set; }
         public string UsuarioEmail { get; set; }
         public string UsuarioTelefone { get; set; }
-        public int IdTipo { get; set; }
-        public int IdSituacaoUsuario { get; set; }
+        public TipoUsuario IdTipo { get; set; }
+        public SituacaoUsuario IdSituacaoUsuario { get; set; }
 
-        public Usuario(int idUsuario, string nomeUsuario, string usuarioSenha, string usuarioLogin, string usuarioEmail, string usuarioTelefone)
+        public Usuario(int idUsuario, string nomeUsuario, string usuarioSenha, string usuarioLogin, string usuarioEmail, string usuarioTelefone, TipoUsuario idTipo, SituacaoUsuario idSituacaoUsuario)
         {
-            TipoUsuario tipo = new TipoUsuario();
-            SituacaoUsuario situacao = new SituacaoUsuario();
-
             IdUsuario = idUsuario;
             NomeUsuario = nomeUsuario;
             UsuarioSenha = usuarioSenha;
             UsuarioLogin = usuarioLogin;
             UsuarioEmail = usuarioEmail;
             UsuarioTelefone = usuarioTelefone;
-            IdTipo = tipo.IdTipo;
-            IdSituacaoUsuario = situacao.IdSituacaoUsuario;
+            IdTipo = idTipo;
+            IdSituacaoUsuario = idSituacaoUsuario;
         }
 
-        public Usuario() { }
+        public Usuario() {}
     }
 }

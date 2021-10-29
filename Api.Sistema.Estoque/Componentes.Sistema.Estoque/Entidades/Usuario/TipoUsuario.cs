@@ -15,8 +15,6 @@ namespace Api.Sistema.Estoque.Entidades.Entidades.Usuario.Entidades
             DescrisaoTipo = descrisaoTipo;
         }
 
-        public TipoUsuario()
-        {
-        }
+        public TipoUsuario(){ }
     }
 }

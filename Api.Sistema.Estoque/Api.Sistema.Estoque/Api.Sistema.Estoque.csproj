@@ -14,7 +14,7 @@
     <PackageReference Include="Swashbuckle.Core" Version="5.6.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AutenticacaoJWT\AutenticacaoJWT.csproj" />
+    <ProjectReference Include="..\AutenticacaoJWT.Sistema.Estoque\AutenticacaoJWT.Sistema.Estoque.csproj" />
   </ItemGroup>
 
 </Project>
