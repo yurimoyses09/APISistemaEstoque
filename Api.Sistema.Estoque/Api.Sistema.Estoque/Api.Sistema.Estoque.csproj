@@ -15,6 +15,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AutenticacaoJWT.Sistema.Estoque\AutenticacaoJWT.Sistema.Estoque.csproj" />
+    <ProjectReference Include="..\Componentes.Sistema.Estoque\Componentes.Sistema.Estoque.csproj" />
+    <ProjectReference Include="..\ConfigConecao_SQL\ConfigConecao_SQL.csproj" />
+    <ProjectReference Include="..\GeradorLogsTXT\GeradorLogsTXT.csproj" />
   </ItemGroup>
 
 </Project>
