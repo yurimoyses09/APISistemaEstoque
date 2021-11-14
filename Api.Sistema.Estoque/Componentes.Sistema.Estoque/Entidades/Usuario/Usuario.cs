@@ -1,21 +1,24 @@
 ﻿using Api.Sistema.Estoque.Entidades.Entidades.Usuario.Entidades;
+using Componentes.Sistema.Estoque;
+using System.Text.Json.Serialization;
 
 namespace Api.Sistema.Estoque.Entidades
 {
-    public class Usuario
+    public class Usuario : IMetodosUsuario
     {
-        public int IdUsuario { get; set; }
+        //[JsonIgnore]
+        //public int IdUsuario { get; set; }
+
         public string NomeUsuario { get; set; }
         public string UsuarioSenha { get; set; }
         public string UsuarioLogin { get; set; }
         public string UsuarioEmail { get; set; }
         public string UsuarioTelefone { get; set; }
-        public TipoUsuario IdTipo { get; set; }
-        public SituacaoUsuario IdSituacaoUsuario { get; set; }
+        public int IdTipo { get; set; }
+        public int IdSituacaoUsuario { get; set; }
 
-        public Usuario(int idUsuario, string nomeUsuario, string usuarioSenha, string usuarioLogin, string usuarioEmail, string usuarioTelefone, TipoUsuario idTipo, SituacaoUsuario idSituacaoUsuario)
+        public Usuario(string nomeUsuario, string usuarioSenha, string usuarioLogin, string usuarioEmail, string usuarioTelefone, int idTipo, int idSituacaoUsuario)
         {
-            IdUsuario = idUsuario;
             NomeUsuario = nomeUsuario;
             UsuarioSenha = usuarioSenha;
             UsuarioLogin = usuarioLogin;
@@ -25,6 +28,15 @@ namespace Api.Sistema.Estoque.Entidades
             IdSituacaoUsuario = idSituacaoUsuario;
         }
 
-        public Usuario() {}
+        public Usuario() { }
+
+        public bool ValidaDadosUsuario(Usuario usuario)
+        {
+            if (string.IsNullOrEmpty(usuario.NomeUsuario) || string.IsNullOrEmpty(usuario.UsuarioSenha) || string.IsNullOrEmpty(UsuarioLogin)) 
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }

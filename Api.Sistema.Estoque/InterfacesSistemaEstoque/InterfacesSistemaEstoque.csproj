@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Componentes.Sistema.Estoque\Componentes.Sistema.Estoque.csproj" />
+  </ItemGroup>
+
 </Project>

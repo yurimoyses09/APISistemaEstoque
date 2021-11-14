@@ -11,9 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutenticacaoJWT.Sistema.Est
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigConecao_SQL", "ConfigConecao_SQL\ConfigConecao_SQL.csproj", "{B94FAE90-80E1-4CA3-9120-9399531534D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorLogsTXT", "GeradorLogsTXT\GeradorLogsTXT.csproj", "{A507FA37-5F70-46F8-9433-41256BDB4C2B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesSistemaEstoque", "InterfacesSistemaEstoque\InterfacesSistemaEstoque.csproj", "{1D3EBB59-A391-4AE7-94F8-6F92C99760D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeradorLogsTXT", "GeradorLogsTXT\GeradorLogsTXT.csproj", "{A507FA37-5F70-46F8-9433-41256BDB4C2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{A507FA37-5F70-46F8-9433-41256BDB4C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A507FA37-5F70-46F8-9433-41256BDB4C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A507FA37-5F70-46F8-9433-41256BDB4C2B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1D3EBB59-A391-4AE7-94F8-6F92C99760D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D3EBB59-A391-4AE7-94F8-6F92C99760D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D3EBB59-A391-4AE7-94F8-6F92C99760D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D3EBB59-A391-4AE7-94F8-6F92C99760D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
