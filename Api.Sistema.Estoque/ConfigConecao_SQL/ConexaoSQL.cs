@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using GeradorLogsTXT;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Data.SqlClient;
 using System.IO;
@@ -16,34 +17,39 @@ namespace ConfigConecao_SQL
         }
         #endregion
 
-        ConexaoSQL SQL;
-        public bool RetornoConexao { get; set; }
+        readonly ConexaoSQL SQL;
+        readonly GravaLog log = new GravaLog();
+
+        public SqlConnection RetornoConexao { get; set; }
 
         public ConexaoSQL() { }
-
-        /// <summary>
-        /// Metodo que retorna string de conexao com sql
-        /// </summary>
-        /// <returns>string</returns>
-        public string GetConnectionString()
-        {
-            return configuration.GetSection("ConnectionStrings").GetSection("DefaultConnection").Value;
-        }
 
         /// <summary>
         /// Metodo resposavel por conectar com sql
         /// </summary>
         /// <param name="stringConnection"></param>
         /// <returns>bool</returns>
-        public bool ConectaComSql(string stringConnection)
+        public SqlConnection ConectaComSql(string stringConnection)
         {
-            RetornoConexao = false;
+            SqlConnection connection = new SqlConnection(stringConnection);
 
-            using SqlConnection connection = new SqlConnection(stringConnection);
-            if (connection.State == System.Data.ConnectionState.Open)
-                RetornoConexao = true;
+            try
+            {
+                if (connection.State != System.Data.ConnectionState.Open)
+                {
+                    log.GravaLogs("Abrindo conexao com SQL");
+                    connection.Open();
+                }
 
-            return RetornoConexao;
+            }
+            catch (Exception ex)
+            {
+                log.GravaLogs($"Falha ao conetar com sql - {ex.Message}");
+                throw ex;
+            }
+
+            return connection;
+
         }
     }
 }
